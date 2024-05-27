@@ -1,0 +1,56 @@
+.header-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+}
+
+.logo-portfolio-cont {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.title-logo-header  {
+    font-size: 2.2vw;
+    letter-spacing: 0.2vw;
+    margin: 0;
+    padding: 1vw;
+    font-weight: 700;
+}
+
+.nav-portfolio {
+    width: 45%;
+    height: 100%;
+}
+
+.ul-nav {
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-nav:hover {
+    background-color: #f82d97;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.li-nav:hover .text-li {
+    color: white;
+}
+
+.text-li {
+    color: rgba(255, 255, 255, 0.667);
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding: 1vw;
+    margin: 0;
+}

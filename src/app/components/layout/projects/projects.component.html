@@ -1,1 +1,81 @@
-<p>projects works!</p>
+<app-header/>
+<main class="projects-section-cont">
+    <div class="title-section-cont">
+        <h1 class="title-projects">
+            Projects
+        </h1>
+        <div class="icon-title-cont">
+            <img class="icon-img" src="/assets/images/folder_filled_icon_142892.svg" alt="folder-icon-svg">
+        </div>
+    </div>
+    <div class="projects-cont">
+        <div class="projects-display-container">
+            <article class="project-card-cont">
+
+                <div class="card-first-look img-project1">
+                </div>
+
+                <div class="hover-card hover-card-show">
+                    <div class="text-card">
+                        <h3 class="title-card">
+                            {{projects[0].title}}
+                        </h3>
+                        <p class="description-card">{{projects[0].description}}</p>
+                    </div>
+                    <div class="btn-card-cont">
+                        <div class="btn-visit-project">
+                            <a class="a-btn-card" target="_blank" [href]="projects[0].links[0]">
+                                <p class="text-btn-card">Go to Repository</p>        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <article class="project-card-cont">
+
+                <div class="card-first-look img-project2">
+                </div>
+
+                <div class="hover-card hover-card-show">
+                    <div class="text-card">
+                        <h3 class="title-card">
+                            {{projects[1].title}}
+                        </h3>
+                        <p class="description-card">{{projects[1].description}}</p>
+                    </div>
+                    <div class="btn-card-cont">
+                        <div class="btn-visit-project">
+                            <a class="a-btn-card" target="_blank" [href]="projects[1].links[0]">
+                                <p class="text-btn-card">Go to Repository</p>        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <article class="project-card-cont">
+
+                <div class="card-first-look img-project3">
+                </div>
+
+                <div class="hover-card hover-card-show">
+                    <div class="text-card">
+                        <h3 class="title-card">
+                            {{projects[2].title}}
+                        </h3>
+                        <p class="description-card">{{projects[2].description}}</p>
+                    </div>
+                    <div class="btn-card-cont">
+                        <div class="btn-visit-project">
+                            <a class="a-btn-card" target="_blank" [href]="projects[2].links[0]">
+                                <p class="text-btn-card">Go to Repository</p>        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </div>
+</main>
