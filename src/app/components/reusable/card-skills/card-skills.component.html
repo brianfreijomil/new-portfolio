@@ -1,0 +1,48 @@
+<div class="carousel-container">
+    <div class="carousel" [style.transform]="getTransform()">
+      <div class="carousel-item" *ngFor="let item of items">
+        <div class="skills-cont">
+          <div class="cont-title-skills">
+            <ul class="list-icons">
+              <li class="li-icon">
+                <div class="cont-icon">
+                  <img class="icon-img" [src]="item.iconList[0]" alt="icon-skill-svg">
+                </div>
+              </li>
+              <li class="li-icon">
+                <div class="cont-icon">
+                  <img class="icon-img" [src]="item.iconList[1]" alt="icon-skill-svg">
+                </div>
+              </li>
+            </ul>
+            <h3 class="title-skills">{{item.title}}</h3>
+            <ul class="list-icons">
+              <li class="li-icon">
+                <div class="cont-icon">
+                  <img class="icon-img" [src]="item.iconList[2]" alt="icon-skill-svg">
+                </div>
+              </li>
+              <li class="li-icon">
+                <div class="cont-icon">
+                  <img class="icon-img" [src]="item.iconList[3]" alt="icon-skill-svg">
+                </div>
+              </li>
+            </ul>
+          </div>
+            <div class="skills-presentation">
+              <ul class="ul-skills">
+                @for (skill of item.skills; track $index) {
+                  <li class="li-skill">
+                    <p class="text-skill">
+                      {{skill}}
+                    </p>
+                  </li>
+                }
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button [ngClass]="{'carousel-prev-hide' : hidePrevCarousel}" class="carousel-button left" (click)="prev()">❮</button>
+    <button [ngClass]="{'carousel-next-hide' : hideNextCarousel}" class="carousel-button right" (click)="next()">❯</button>
+  </div>

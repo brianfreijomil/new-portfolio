@@ -44,6 +44,10 @@
     animation: showElementOpacityAnimation linear 3s;
 }
 
+.line-middle-hide {
+    display: none;
+}
+
 .subtitle-presentation {
     color: #f82d97;
     font-size: 1.8vw;
@@ -124,3 +128,110 @@
     font-weight: 600;
     margin: 0;
 }
+
+
+/* MOBILE STYlE*/
+
+@media (max-width: 650px) {
+
+    .home-cont {
+        justify-content: center;
+        align-items: start;
+    }
+
+    .main-cont {
+        height: auto;
+        display: flex;
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .my-img-cont {
+        margin-top: 5vh;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .my-presentation-cont {
+        width: 80vw;
+    }
+
+    .titles-cont {
+        margin-top: 2vw;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title-presentation {
+        text-align: center;
+        font-size: 4vw;
+        animation: none;
+    }
+
+    .line-middle-show {
+        display: flex;
+        text-align: center;
+        font-size: 4vw;
+        letter-spacing: 0.2vw;
+        margin: 0;
+        font-weight: 700;
+    }
+    
+    .subtitle-presentation {
+        text-align: center;
+        font-size: 4vw;
+        animation: showSubtitleAnimation none;
+    }
+
+    /*text*/
+    .text-cont {
+        margin: 2vh 0 7vh 0;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title-text-presentation {
+        width: 80vw;
+        font-size: 3vw;
+        font-weight: 600;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    .text-presentation {
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-sections {
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    
+    .btn-nav-section {
+        /* width: 10vw; */
+        height: 7vw;
+        margin-bottom: 5vh;
+    }
+    
+    .text-btn-nav {
+        padding: 2vw;
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+
+
+}
+
+

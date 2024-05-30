@@ -1,0 +1,273 @@
+app-header {
+    height: 12vh;
+    width: 100%;
+}
+
+.contact-section-cont {
+    height: 88vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.contact-section-cont::-webkit-scrollbar {
+    width: 10px;
+    background-color: #2b2b2b14;
+}
+.contact-section-cont::-webkit-scrollbar-thumb {
+    background: #66666695;
+    border-radius: 8px;
+}
+.contact-section-cont::-webkit-scrollbar-thumb:hover {
+    background: #cdcdcdb2;
+}
+
+.title-section-cont {
+    height: 15vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 4vw;
+}
+
+.title-contact {
+    font-size: 2.8vw;
+    letter-spacing: 0.2vw;
+    font-weight: 700;
+    margin: 0 1vw 0 0;
+    padding: 0;
+}
+
+.icon-title-cont {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-img {
+    width: 95%;
+    height: 95%;
+    filter: invert(1);
+}
+
+.contact-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-types-contact {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-contact {
+    margin: 2vw;
+    padding: 0;
+}
+
+.link-contact {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw;
+    border: solid 3px #f82d9699;
+}
+.link-contact:hover {
+    background-color: #f82d97;
+}
+
+.element-contact {
+    margin: 0.2vw;
+}
+
+.cont-icon {
+    width: 2vw;
+    height: 2vw;
+}
+
+.img-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.style-icon-github {
+    filter: invert(1);
+}
+
+.text-contact{
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding: 0.2vw;
+    margin: 0;
+}
+
+.pdfbtn {
+    cursor: pointer;
+}
+
+.cont-pdf {
+    display: flex;
+    align-items: center;
+}
+
+.cont-icon-pdf {
+    width: 2vw;
+    height: 2vw;
+}
+
+.img-icon-pdf {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+/* MOBILE STYlE*/
+
+@media (max-width: 650px) {
+
+    /*nav fixed*/
+
+    app-header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 8vh;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-section-cont {
+        overflow-y: initial;
+    }
+
+    /*title section*/
+
+    .title-section-cont {
+        height: 10vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #921455;
+    }
+    
+    .title-contact {
+        font-size: 5.5vw;
+        font-weight: 700;
+    }
+    
+    .icon-title-cont {
+        width: 7.2vw;
+        height: 7.2vw;
+        align-items: end;
+    }
+    
+    .icon-img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .contact-cont {
+        width: 100%;
+        height: 78vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    /*main cont*/
+
+    .list-types-contact {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .li-contact {
+        margin: 0;
+    }
+    
+    .link-contact {
+        padding: 1vw;
+        border: solid 3px #f82d9699;
+    }
+    
+    .element-contact {
+        margin: 1vw;
+    }
+    
+    .cont-icon {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .text-contact{
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 0.5vw;
+        margin: 0;
+    }
+    
+    .cont-icon-pdf {
+        width: 4vw;
+        height: 4vw;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .title-contact {
+        font-size: 7vw;
+        font-weight: 700;
+    }
+    
+    .icon-title-cont {
+        width: 8vw;
+        height: 8vw;
+        align-items: end;
+    }
+    
+    .icon-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .link-contact {
+        padding: 1vw;
+        border: solid 3px #f82d9699;
+    }
+    
+    .element-contact {
+        margin: 2vw;
+    }
+    
+    .cont-icon {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .text-contact{
+        font-size: 4vw;
+        font-weight: 600;
+        padding: 1vw;
+        margin: 0;
+    }
+    
+    .cont-icon-pdf {
+        width: 5vw;
+        height: 5vw;
+    }
+
+}

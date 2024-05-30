@@ -1,1 +1,45 @@
-<p>contact works!</p>
+<app-header/>
+<main class="contact-section-cont">
+    <div class="title-section-cont">
+        <h1 class="title-contact">
+            Contact
+        </h1>
+        <div class="icon-title-cont">
+            <img class="icon-img" src="/assets/images/contact_write_us_mail_email_ecommerce_icon_224959.svg" alt="tools-icon-svg">
+        </div>
+    </div>
+    <div class="contact-cont">
+        <ul class="list-types-contact">
+            @for (c of contacts; track $index) {
+                @if(c.type === 'text') {
+                    <li class="li-contact">
+                        <div class="link-contact copy-contact">
+                            <div class="cont-icon element-contact">
+                                <img class="img-icon" [src]="c.icon" alt="icon-contact-svg">
+                            </div>
+                            <p class="text-contact element-contact">{{c.name}}</p>
+                        </div>
+                    </li>
+                }
+                @else {
+                    <li class="li-contact">
+                        <a class="link-contact" target="_blank" [href]="c.contact">
+                            <div class="cont-icon element-contact">
+                                <img [ngClass]="{'style-icon-github': c.name === 'GitHub'}" class="img-icon" [src]="c.icon" alt="icon-contact-svg">
+                            </div>
+                            <p class="text-contact element-contact">{{c.name}}</p>
+                        </a>
+                    </li>
+                }
+            }
+            <li class="li-contact">
+                <div class="link-contact pdfbtn" (click)="downloadPdf()">
+                    <div class="cont-icon-pdf element-contact">
+                        <img class="img-icon-pdf" src="/assets/images/biodata_resume_job_application_profile_cv_vitae_curriculum_icon_232605.svg" alt="icon-contact-svg">
+                    </div>
+                    <p class="text-contact">Download resume</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>

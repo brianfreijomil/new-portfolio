@@ -1,0 +1,147 @@
+app-header {
+    height: 12vh;
+    width: 100%;
+}
+
+.technologie-section-cont {
+    height: 88vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.technologie-section-cont::-webkit-scrollbar {
+    width: 10px;
+    background-color: #2b2b2b14;
+}
+.technologie-section-cont::-webkit-scrollbar-thumb {
+    background: #66666695;
+    border-radius: 8px;
+}
+.technologie-section-cont::-webkit-scrollbar-thumb:hover {
+    background: #cdcdcdb2;
+}
+
+.title-section-cont {
+    height: 15vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 4vw;
+}
+
+.title-technologies {
+    font-size: 2.8vw;
+    letter-spacing: 0.2vw;
+    font-weight: 700;
+    margin: 0 1vw 0 0;
+    padding: 0;
+}
+
+.icon-title-cont {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-img {
+    width: 95%;
+    height: 95%;
+    filter: invert(1);
+}
+
+.technologies-cont {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+app-card-skills {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* MOBILE STYlE*/
+
+@media (max-width: 650px) {
+
+    /*nav fixed*/
+
+    app-header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 8vh;
+        width: 100%;
+        margin: 0;
+    }
+
+    .technologie-section-cont {
+        overflow-y: initial;
+    }
+
+    /*title section*/
+
+    .title-section-cont {
+        height: 10vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #921455;
+    }
+    
+    .title-technologies {
+        font-size: 5.5vw;
+        font-weight: 700;
+    }
+    
+    .icon-title-cont {
+        width: 7.2vw;
+        height: 7.2vw;
+        align-items: end;
+    }
+    
+    .icon-img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .technologies-cont {
+        width: 100%;
+        height: 82vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    app-card-skills {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .title-technologies {
+        font-size: 7vw;
+        font-weight: 700;
+    }
+    
+    .icon-title-cont {
+        width: 8vw;
+        height: 8vw;
+        align-items: end;
+    }
+    
+    .icon-img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
