@@ -1,11 +1,11 @@
-# Portafolio
+# My personal portafolio
 
-# View
+## View
 
 You can see my portfolio by clicking on this link!
 - https://brianfreijomil.netlify.app/
 
-# Description
+### Description
 
 Hi! i'm Brian and welcome to my portfolio! This project is built using Angular 17 and showcases my work and skills. The portfolio is divided into four main sections:
 
