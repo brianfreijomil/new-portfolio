@@ -53,7 +53,7 @@ export class TechnologiesComponent {
         'Code versioning: GitHub',
         'Maven', 
         'Methodologies : Scrum',
-        'Testing: JUnit, Postman'
+        'Testing: JUnit, Mockito, Postman'
       ],
       iconList: [
         '/assets/images/github-logo_icon-icons.com_73546.svg',
